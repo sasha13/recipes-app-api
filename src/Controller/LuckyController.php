@@ -19,6 +19,8 @@ class LuckyController
      * @Route("/lucky/number")
      */
     public function number() {
+        phpinfo();
+        die;
         $number = random_int(0, 1000);
 
         return new Response(
